@@ -1,0 +1,108 @@
+
+while(true)
+do
+sleep(5)
+function DoOne()
+  turtle.turnRight()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnRight()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnRight()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.turnLeft()
+  turtle.dig()
+  turtle.forward()
+  turtle.dig()
+  turtle.forward()
+  turtle.turnLeft()
+end
+
+turtle.select(16)
+turtle.dig()
+turtle.forward()
+turtle.dig()
+turtle.forward()
+if turtle.compare() then
+ for i = 1,35,1
+ do
+  turtle.select(1)
+  DoOne()
+  turtle.digUp()
+  turtle.up()
+ end
+ for i = 1,35,1
+ do
+  turtle.down()
+ end
+ turtle.suck()
+ turtle.select(15)
+ turtle.forward()
+ turtle.place()
+ turtle.back()
+ turtle.place()
+ turtle.turnLeft()
+ turtle.forward()
+ turtle.turnRight()
+ turtle.forward()
+ turtle.place()
+ turtle.back()
+ turtle.place()
+ turtle.turnRight()
+ turtle.forward()
+ turtle.turnLeft()
+ turtle.back()
+ turtle.back()
+ for i = 1,14,1
+ do
+  turtle.select(i)
+  turtle.dropDown()
+ end
+  turtle.select(15)
+  turtle.forward()
+  turtle.suckDown()
+ for i = 1,14,1
+ do
+  turtle.select(i)
+  turtle.dropDown()
+ end
+  turtle.back()
+ else
+ turtle.back()
+ turtle.back()
+end
+end
